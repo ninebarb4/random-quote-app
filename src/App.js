@@ -14,12 +14,6 @@ const colorsArray = [
 ]
 
 
-/*function changeColor(){
-  if(color !== colorsArray.length - 1){
-    let result = 
-  }
-} */
-
 function App() {
   const [color, setColor] = useState(colorsArray[0]);
   let index = colorsArray.indexOf(color);

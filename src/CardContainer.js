@@ -7,6 +7,9 @@ import React from 'react';
 import Typography from '@material-ui/core/Typography';
 import { useState, useEffect } from 'react';
 import TwitterIcon from '@material-ui/icons/Twitter';
+import Icon from '@mdi/react'
+import { mdiFormatQuoteOpen } from '@mdi/js';
+
 
 
 const useStyles = makeStyles({
@@ -25,6 +28,10 @@ const useStyles = makeStyles({
         opacity: 1,
         transition: "opacity 1s ease-in"
     },
+    /*quoteLeft: {
+        size: "1em"
+    },*/
+
     author: {
         display: "flex",
         justifyContent: "flex-end",
@@ -91,6 +98,7 @@ function CardContainer(props){
         <Card className={classes.root} id="quote-box">
             <CardContent>
                 <Typography className={classes.quote} variant="h5" component="h2" id="text" gutterBottom>
+                    <Icon path={mdiFormatQuoteOpen} size={2}/>
                     {quote}
                 </Typography>
                 <div className={classes.author}>
