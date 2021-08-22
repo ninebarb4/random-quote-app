@@ -26,7 +26,7 @@ function App() {
      }}>
       <ReactFCCtest />
       <Typography className="page-header" variant="h3" component="h3" gutterBottom>
-          Random Quote Machine
+          Random Quote App
       </Typography>
       <div className="card-wrapper">
         <CardContainer 
@@ -36,6 +36,9 @@ function App() {
         index={index}
         maxIndex={maxIndex}/>
       </div>
+      <Typography color="textSecondary" id="signature">
+        by James
+      </Typography>
     </div>
   );
 }
